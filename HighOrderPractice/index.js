@@ -71,4 +71,7 @@ const OverMoney = people.every(person => person.balance > '$10000')
 //console.log(OverMoney)
 
 // Do any of our active users live in North Carolina? Return a boolean representation. (some?)
-
+const NorthCarolina = people
+.map(person => person.address.state) 
+.some(state => state == 'North Carolina')
+console.log(NorthCarolina)
